@@ -3,9 +3,8 @@ import SearchBar from './SearchBar'
 import DropDown from './DropDown'
 import axios from 'axios'
 
-export default function TransactionTable({ transactions, setTransactions }) {
+export default function TransactionTable({ transactions, setTransactions, selectedMonth, setSelectedMonth }) {
     const [search, setSearch] = useState('');
-    const [selectedMonth, setSelectedMonth] = useState('March');
     const [page, setPage] = useState(1);
     const perPage = 10;
 
