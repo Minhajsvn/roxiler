@@ -1,12 +1,19 @@
 import React from 'react'
 
-export default function SearchBar({ search, handleChange }) {
+export default function SearchBar({ search, setSearch, setPage }) {
+
+    const handleChange = (e) => {
+        setSearch(e.target.value);
+        setPage(1)
+    }
+
     return (
         <input 
-            className='px-8 py-2 bg-emerald-500 rounded-full placeholder:text-gray-50 active:border-none'
+            className='w-72 px-4 py-2 border border-gray-300 rounded-full'
             type="text" 
             placeholder='Search transaction' 
             value={search} 
-            onChange={handleChange} />
+            onChange={handleChange} 
+        />
     )
 }
