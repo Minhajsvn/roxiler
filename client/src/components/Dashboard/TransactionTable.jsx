@@ -58,7 +58,7 @@ export default function TransactionTable({ transactions, setTransactions }) {
                             <td className='px-4 py-2 text-center'>₹ {transaction.price}</td>
                             <td className='px-4 py-2 text-center'>{transaction.category}</td>
                             <td className='px-4 py-2 text-center'>{transaction.sold ? '✔' : '❌'}</td>
-                            <td className='flex justify-center items-center px-4 py-2'>
+                            <td className='px-4 py-2'>
                                 <img 
                                     className='mix-blend-multiply py-2'
                                     src={transaction.image} 
