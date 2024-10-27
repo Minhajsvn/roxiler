@@ -10,7 +10,7 @@ function App() {
 
   const fetchTransactions = async () => {
     try {
-      const response = await axios.get('http://localhost:8082/transactions');
+      const response = await axios.get('https://roxiler-eqzc.onrender.com/transactions');
       console.log(response.data);
       setTransactions(response.data)   
     } catch (error) {
